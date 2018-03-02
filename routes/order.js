@@ -9,5 +9,5 @@ exports.add = function(req, res) { 
 	console.log(id);
 
 	data.incompleted_items.push(item);
-	res.render('buyer_orderHistory', data);
+	res.render('buyer_orderHistory_A', data);
  }
