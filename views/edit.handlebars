@@ -1,0 +1,92 @@
+<html>
+	<head>
+		<title>Account page</title>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/account.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "container">
+ 			<div class="header" id="myHeader">
+ 				<table>
+ 					<center><td><h2>Account</h2></td></center>
+ 				</table>
+ 			</div>
+
+			<form id="editAccount" role="form" method="get" action="/editted">
+			{{#each info}}
+ 			<div class="details">
+			<div><table>
+ 				<td>
+ 					<div><img id="photo" src="{{imageURL}}"></div>
+ 				</td>
+ 				<td>
+ 					<table>
+					<tr>
+      					<td colspan="2">
+									<div class="form-group">
+									<label for="name">Username:</label>
+				     	 		<input type="text" class="form-control" id="name" value="{{name}}" name="name">
+				    			</div>
+      					</td>
+      					<td></td>
+      				</tr>
+      				<tr>
+      					<td>
+									<div class="form-group">
+									<label for="phone">Phone:</label>
+				     	 		<input type="text" class="form-control" id="phone" value="{{phone}}" name="phone">
+				    			</div>
+									<div class="form-group">
+									<label for="email">Email:</label>
+				     	 		<input type="text" class="form-control" id="email" value="{{email}}" name="email">
+				    			</div>
+      					</td>
+      				</tr>
+					</table>
+ 				</td>
+ 			</table></div>
+
+			<div id="payment"><table>
+				</tr>
+      				<td colspan="2">
+      					<h4>Saved Payment Methods</h4>
+    				</td>
+      				<td></td>
+      			</tr>
+    			<tr>
+    				<td>
+							<div class="form-group">
+							<label for="visa">Visa:</label>
+							<input type="text" class="form-control" id="visa" value="{{visa}}" name="visa">
+							</div>
+							<div class="form-group">
+							<label for="paypal">Paypal:</label>
+							<input type="text" class="form-control" id="paypal" value="{{paypal}}" name="paypal">
+							</div>
+							<div class="form-group">
+							<label for="name">Venmo:</label>
+							<input type="text" class="form-control" id="venmo" value="{{venmo}}" name="venmo">
+							</div>
+    				</td>
+  				</tr>
+ 			</table></div>
+			{{/each}}
+
+			<input type="submit" id="check" class="btn btn-default" value="Complete" style="margin-left: 20px"></input>
+		</div>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		{{> facebook}}
+		<script src="/js/facebook.js"></script>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/userHome.js"></script>
+	</body>
+</html>

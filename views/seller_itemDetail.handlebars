@@ -1,0 +1,125 @@
+<html>
+	<head>
+		<title>seller item detail page</title>
+		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/index_itemDetail.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "container">
+ 			<div id="myHeader" class="header">
+ 				<table>
+ 					<td><div class="topIcon"><a href="seller_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
+ 					<td><h2>Details</h2></td>
+ 				</table>
+ 			</div>
+
+ 			<div class="details">
+			<div id="box">
+ 			<table>
+ 				<td>
+ 					<div id="itemPic"><img src={{imageURL}}></div>
+					<!--<a href="buyer_itemPhotos">more photos ...</a>-->
+ 				</td>
+ 				<td>
+ 					<table>
+					<tr>
+      					<td colspan="2">
+      						<h4 class = "item_name">{{name}}</h4>
+      					</td>
+      					<td></td>
+      				</tr>
+      				<tr>
+						<td>
+      						<p>Price: <strong>{{price}}</strong></p>
+      						<p>Pickup Time: <Strong>{{pickupTime}}</Strong></p>
+      					</td>
+      				</tr>
+					</table>
+ 				</td>
+ 			</table>
+			</div>
+
+			<hr>
+ 			<!-- <table>
+ 				<tr>
+ 					<td>
+ 						<h3 class="info">- Bought by: XXX XXXXX</h3>
+ 					</td>
+ 					<td id="callAndText">
+ 						<i class="material-icons" style="font-size:50px;">call</i>
+ 						<i class="material-icons" style="font-size:50px;">textsms</i>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>
+ 						<h3 class="info">- Bought by: XXX XXXXX</h3>
+ 					</td>
+ 					<td id="callAndText">
+ 						<i class="material-icons" style="font-size:50px;">call</i>
+ 						<i class="material-icons" style="font-size:50px;">textsms</i>
+ 					</td>
+ 				</tr>
+ 				<tr>
+ 					<td>
+ 						<h3 class="info">- Bought by: XXX XXXXX</h3>
+ 					</td>
+ 					<td id="callAndText">
+ 						<i class="material-icons" style="font-size:50px;">call</i>
+ 						<i class="material-icons" style="font-size:50px;">textsms</i>
+ 					</td>
+ 				</tr>
+ 			</table> -->
+
+ 			<table>
+ 				<td>
+ 					<h3 class="info">- Pickup at:</h3>
+ 					<p class="text">{{pickupLocation}}</p>
+ 				</td>
+ 				<td>
+ 					<div class="topIcon"><i class="material-icons" style="font-size:50px;">location_on</i></div>
+ 				</td>
+ 			</table>
+ 			<h3 class="info">- Pickup Time: {{pickupTime}}</h3>
+ 			<h3 class="info">- Come and Learn to Cook This Item Allowed: {{learn}}</h3>
+ 			<h3 class="info">- Description: </h3>
+ 			<p class="text">
+ 				{{description}}
+ 			</p>
+
+ 			<table>
+ 				<th>
+ 					- Order Numbers:
+ 				</th>
+ 				<td id="orderNumbers">
+ 					<strong>{{orderNumbers}}</strong>
+ 				</td>
+ 			</table>
+
+			<hr>
+			<hr>
+			<hr>
+ 			<table>
+ 				<td>
+					<form id="delete" role="form" method="get" action="/delete">
+						<input type="submit" id="submitBtn" class="btn btn-default" value="DELETE"></input>
+					</form>
+ 					</a>
+ 				</td>
+ 			</table>
+
+ 			</div>
+
+ 		</div>
+
+ 	<script src="/js/jquery-1.11.0.js"></script>
+ 	<script src="/js/bootstrap.js"></script>
+ 	<script src="/js/userHome.js"></script>
+	</body>
+</html>

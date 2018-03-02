@@ -1,0 +1,54 @@
+{
+  "items": [
+    {
+      "name": "Chicken Teriyaki",
+      "imageURL": "img/foodPics/ChickenTeriyaki01.jpg",
+      "price": "$3.99",
+      "distance": "0.8 mi",
+      "seller": "Mingyi Lin",
+      "sellerRating": "3.4",
+      "pickupTime": "18:30",
+      "learn": "No",
+      "pickupLocation": "7665 Gilman Drive, apt 9910",
+      "description": "Delicious Japanses Chicken Teriyaki. 1 serving."
+    },{
+      "name": "Japanese Crab Legs",
+      "imageURL": "img/foodPics/Crab01.jpg",
+      "price": "$6.99",
+      "distance": "1.9 mi",
+      "seller": "Tiantao Shen",
+      "sellerRating": "4.5",
+      "pickupTime": "18:00",
+      "learn": "Yes",
+      "pickupLocation": "2142 Scholar Ln, apt 1234",
+      "description": "Delicious Japanses Crab Legs"
+    },{
+      "name": "Mango Smoothie",
+      "imageURL": "img/foodPics/Smoothie01.jpg",
+      "price": "$1.99",
+      "distance": "0.1 mi",
+      "seller": "Luke",
+      "sellerRating": "2.9",
+      "pickupTime": "13:20",
+      "learn" : "No",
+      "pickupLocation": "1632 Marshall Ln, apt 4123",
+      "description": "Fancie Smoothie"
+    },{
+      "name": "Egg Salad",
+      "imageURL": "img/foodPics/Salad01.jpg",
+      "price": "$2.99",
+      "distance": "3.2 mi",
+      "seller": "Zhenyi Cao",
+      "sellerRating": "4.0",
+      "pickupTime": "17:00",
+      "learn": "Yes",
+      "pickupLocation": "8920 Cognitive St, apt 5321",
+      "description": "Salad with egg"
+    }
+  ],
+
+  "currentItem": [
+
+  ]
+
+}

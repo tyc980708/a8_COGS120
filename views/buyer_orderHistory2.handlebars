@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>Buyer Order History Page</title>
+
+		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/buyer_orderHistory.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "container">
+
+			<div id="myHeader" class="header">
+ 				<table>
+ 					<td><div class="topIcon"><a href="./buyer_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
+ 					<td><h2>Order History</h2></td>
+ 				</table>
+ 			</div>
+
+			<div class="content">
+				<br>
+			<div id="incompleted">
+				{{#each completed_items}}
+				<div class = "history">
+					<table>
+						<tr>
+							<td rowspan="2">
+	      						<img src="{{imageURL}}">
+	      					</td>
+	      					<td colspan="2">
+	      							<h4 class = "item_name">{{name}}</h4>
+	      					</td>
+	      					<td></td>
+	      				</tr>
+	      					<td>
+	      						<p><Strong>Price: </strong>{{price}}</p>
+	      						<p><Strong>Distance: </Strong>{{distance}}</p>
+	      					</td>
+	      					<td>
+	      						<p><Strong>Seller Rating: </Strong>{{sellerRating}}</p>
+	      						<p><Strong>Pickup Time: </Strong>{{pickupTime}}</p>
+	      					</td>
+	      				<tr>
+					</table>
+				</div>
+				<!-- <button>Rate Seller</button> -->
+				{{/each}}
+			</div>
+
+			<hr>
+
+			<a href="buyer_orderHistory_A">
+				<div id="viewIncompleted">
+					<center><h4>View Past Orders</h4></center>
+					<center><i class="material-icons" style="font-size:50px;">shopping_cart</i></center>
+				</div>
+			</a>
+
+			</div>
+
+			<script src="/js/jquery-1.11.0.js"></script>
+			<script src="/js/bootstrap.js"></script>
+			<script src="/js/userHome.js"></script>
+		</div>
+	</body>
+</html>

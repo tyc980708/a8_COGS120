@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Login</title>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="/css/bootstrap.css" rel="stylesheet">
+	    <link href="/css/bootstrap-theme.css" rel="stylesheet">
+	    <!-- <link href="../public/css/login.css" rel="stylesheet"> -->
+
+	    <!-- Use internet source for icons-->
+	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">
+
+        <h1 style="text-align: center; color: #2d862d; margin: 7%;" >Green for All</h1>
+
+        <center><table>
+   				<form id="login" role="form" method="get" action="/buyer_home">
+  	    			<div class="form-group">
+  	      		<label for="name">Username:</label><br>
+  	     	 		<input type="text" class="form-control" id="name" placeholder="" name="name">
+  	    			</div>
+  	    			<div class="form-group">
+  	      			<label for="description">Password:</label><br>
+  	      			<input type="text" class="form-control" id="password" placeholder="" name="password">
+  	    			</div>
+              <input type="submit" id="submitBtn" class="btn btn-default" value="Login"></input>
+  				</form>
+   			</table></center>
+
+        <h4 style="text-align: center;">or</h4>
+
+        <div style="text-align: center; background-color: whitesmoke; padding:20px;">
+            <div id="logins">
+              <p class="facebookLogin">
+        				Please login through Facebook
+        				<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        				</fb:login-button>
+        			</p>
+              <div align="center" id="facebookPhoto" class="profile">
+                <img id="photo" class='img-responsive' width="300px" src="img/accountPic.png" />
+
+                <a href="buyer_home"><button hidden="hidden" class="continueFB" style="border: 2px solid black; margin-top: 20px">
+                  Continue as <label class="userName">userName</label>
+                </button></a>
+
+              </div>
+
+            </div>
+        </div>
+        </div>
+
+
+	      <script src="https://code.jquery.com/jquery.js"></script>
+	      <script src="/js/bootstrap.min.js"></script>
+
+        {{> facebook}}
+      	<script src="/js/facebook.js"></script>
+    </body>
+</html>

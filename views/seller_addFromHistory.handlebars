@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Seller home page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+		<link href="/css/userHome.css" rel="stylesheet">
+
+	<!-- Use internet source for icons-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div id="myHeader" class="header">
+			<table>
+				<td><div class="topIcon" id = "drop_down">
+					<a href="./seller_addMenu"><i class="material-icons" style="font-size:50px;">backspace</i></div></td></a>
+				<td><h2>Add From History</h2></td>
+			</table>
+			</div>
+
+			{{#each history_items}}
+			<div class = "historySellerItems" id="{{@index}}">
+				<a href="seller_addFromHistoryDetail">
+				<table>
+					<tr>
+						<td rowspan="2">
+									<div id="itemMainPic">
+      							<center><img align="middle" src="{{imageURL}}"></center>
+									</div>
+      					</td>
+      					<td colspan="2">
+      						<h4 class = "item_name">{{name}}</h4>
+      					</td>
+      					<td></td>
+      			</tr>
+      			<tr>
+      				<td>
+      					<p>Price: <strong>{{price}}</strong></p>
+      					<p>Pickup Time: <Strong>{{pickupTime}}</Strong></p>
+      				</td>
+      			</tr>
+				</table>
+				</a>
+			</div>
+			{{/each}}
+		</div>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/bootstrap.js"></script>
+		<script src="/js/userHome.js"></script>
+	</body>
+</html>

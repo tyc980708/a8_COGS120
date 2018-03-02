@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Seller home page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+		<link href="/css/sellerHome.css" rel="stylesheet">
+
+	<!-- Use internet source for icons-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+			<div id="myHeader" class="header">
+			<table>
+				<td><div class="topIcon" id = "drop_down">
+					<a href="./buyer_home"><i class="material-icons" style="font-size:50px;">swap_horiz</i></div></td></a>
+				<td><h1>Chef Home</h1></td>
+				<td id="topRightIconPadding"> </td>
+				<td><div class="topIcon" id = "add_box"><a href="seller_addMenu"><i class="material-icons" style="font-size:50px;">add_box</i></a></div></td>
+				<td><div class="topIcon" id = "account_box"><a href="./account2"><i class="material-icons" style="font-size:50px;">account_box</i></a></div></td>
+			</table>
+			<label>switch to buy</label>
+			</div>
+
+			{{#each seller_items}}
+			<div class = "sellerItems" id="{{@index}}">
+				<a href="seller_itemDetail">
+				<table>
+					<tr>
+						<td rowspan="2">
+									<div id="itemMainPic">
+      						<img src="{{imageURL}}">
+									</div>
+      					</td>
+      					<td colspan="2">
+      						<h4 class = "item_name">{{name}}</h4>
+      					</td>
+      					<td></td>
+      			</tr>
+      			<tr>
+      				<td>
+      					<p>Price: <strong>{{price}}</strong></p>
+      					<p>Pickup Time: <Strong>{{pickupTime}}</Strong></p>
+      				</td>
+      				<td>
+      					<p>Order Numbers: <Strong id="orderNumbers">{{orderNumbers}}</Strong></p>
+      				</td>
+      			</tr>
+				</table>
+				</a>
+			</div>
+			{{/each}}
+		</div>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/bootstrap.js"></script>
+		<script src="/js/userHome.js"></script>
+	</body>
+</html>

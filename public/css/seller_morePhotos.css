@@ -1,0 +1,47 @@
+a {
+	color: black;
+}
+.topIcon {
+	padding-top: 12px;
+}
+
+.details {
+	padding-left: 10px;
+}
+
+#callAndText {
+	padding-left: 20px;
+}
+
+#total {
+	background-color: white;
+	width: 26vw;
+	height: 20px;
+	border: none;
+	color: black;
+	text-align: center;
+}
+
+.text {
+	font-size: 20px;
+	max-width: 380px;
+	margin-left: 16px;
+}
+
+button {
+    background-color: grey;
+    border: none;
+    color: white;
+    padding: 20px 10vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+img {
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 75vw;
+}

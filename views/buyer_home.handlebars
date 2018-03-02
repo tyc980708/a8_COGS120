@@ -1,0 +1,72 @@
+<html>
+<head>
+
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/bootstrap.js"></script>
+
+	<title>Buyer Homepage</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/userHome.css" rel="stylesheet">
+
+	<!-- Use internet source for icons-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<div class = "container">
+
+		<div id="myHeader" class="header">
+		<table>
+			<td><div class="topIcon" id = "drop_down">
+				<a href="seller_home"><i class="material-icons" style="font-size:50px;">swap_horiz</i></div></td></a>
+			<td><h1>Order Meals</h1></td>
+			<td id="topRightIconPadding"> </td>
+			<td><div class="topIcon" id = "history"><a href="./buyer_orderHistory_A"><i class="material-icons" style="font-size:50px;">shopping_cart</i></a></div></td>
+			<td><div class="topIcon" id = "account_box"><a href="./account"><i class="material-icons" style="font-size:50px;">account_box</i></a></div></td>
+		</table>
+		<label>switch to sell</label>
+		<!-- <div id = "search">
+			<input type="text" id="myInput" placeholder="Search" title="Type in a name">
+		</div> -->
+	</div>
+
+		<div class="content">
+		{{#each items}}
+
+		<div class = "items" id = "{{@index}}">
+			<a href="./index_itemDetail">
+			<table>
+				<tr>
+					<td rowspan="2">
+								<div id="itemMainPic">
+      						<img src={{imageURL}}>
+								</div>
+      				</td>
+      				<td colspan="2">
+      						<h4 class = "item_name">{{name}}</h4>
+      				</td>
+      				<td></td>
+      			</tr>
+      				<td>
+      					<p><Strong>Price: </strong>{{price}}</p>
+      					<p><Strong>Distance: </Strong>{{distance}}</p>
+      				</td>
+      				<td>
+      					<p><Strong>Seller Rating: </Strong>{{sellerRating}}</p>
+      					<p><Strong>Pickup Time: </Strong>{{pickupTime}}</p>
+      				</td>
+      			<tr>
+			</table>
+			</a>
+		</div>
+		{{/each}}
+		</div>
+
+	</div>
+
+
+	<script src="/js/userHome.js"></script>
+</body>
+</html>

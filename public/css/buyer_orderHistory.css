@@ -1,0 +1,49 @@
+content {
+	padding: 25px;
+}
+
+#myHeader {
+	background-color: white;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+	width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+a {
+	color: black;
+}
+.topIcon {
+	padding-top: 12px;
+}
+
+img {
+	max-width: 128px;
+	max-height: 128px;
+
+}
+
+#incompleted .items {
+	border: solid lightgrey;
+	margin-left: 3px;
+	max-width: 400px;
+}
+
+#completed .items {
+	border: solid grey;
+	margin-left: 3px;
+	max-width: 400px;
+}
+
+button {
+	margin: 7px;
+	border: 2px solid black;
+}

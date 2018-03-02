@@ -1,0 +1,77 @@
+<html>
+	<head>
+		<title>Account page</title>
+ 		<meta charset="utf-8">
+ 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 		<link href="/css/bootstrap.css" rel="stylesheet">
+ 		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+ 		<link href="/css/account.css" rel="stylesheet">
+
+ 		<!-- Use internet source for icons-->
+ 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class = "container">
+ 			<div class="header" id="myHeader">
+ 				<table>
+ 					<td><div class="topIcon"><a href="./seller_home"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
+ 					<td><h2>Account</h2></td>
+ 				</table>
+ 			</div>
+
+			{{#each info}}
+ 			<div class="details">
+			<div><table>
+ 				<td>
+ 					<div><img id="photo" src="{{imageURL}}"></div>
+ 				</td>
+ 				<td>
+ 					<table>
+					<tr>
+      					<td colspan="2">
+      						<h4 class = "name">{{name}}</h4>
+      					</td>
+      					<td></td>
+      				</tr>
+      				<tr>
+      					<td>
+      						<p><Strong>Phone: </strong>{{phone}}</p>
+      						<p><Strong>Email: </Strong>{{email}}</p>
+      					</td>
+      				</tr>
+					</table>
+ 				</td>
+ 			</table></div>
+
+			<div id="payment"><table>
+				</tr>
+      				<td colspan="2">
+      					<h4>Saved Payment Methods</h4>
+    				</td>
+      				<td></td>
+      			</tr>
+    			<tr>
+    				<td>
+  						<p><Strong>Visa: </strong>{{visa}}</p>
+      				<p><Strong>Paypal: </Strong>{{paypal}}</p>
+							<p><Strong>Venmo: </Strong>{{venmo}}</p>
+    				</td>
+  				</tr>
+ 			</table></div>
+			{{/each}}
+
+			<div id="edit">
+				<i class="material-icons" style="font-size:50px;">edit</i>
+			</div>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery.js"></script>
+		<script src="/js/bootstrap.min.js"></script>
+		{{> facebook}}
+		<script src="/js/facebook.js"></script>
+		<script src="/js/jquery-1.11.0.js"></script>
+		<script src="/js/userHome.js"></script>
+	</body>
+</html>

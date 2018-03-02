@@ -1,0 +1,45 @@
+{
+  "history_items": [
+    {
+      "name": "Mango Smoothie",
+      "imageURL": "img/foodPics/Smoothie01.jpg",
+      "price": "$1.99",
+      "distance": "0.1 mi",
+      "seller": "Luke",
+      "sellerRating": "2.9",
+      "pickupTime": "13:20",
+      "learn" : "No",
+      "pickupLocation": "1632 Marshall Ln, apt 4123",
+      "description": "Fancie Smoothie",
+      "orderNumbers": "3"
+    },
+
+    {
+      "name": "Strawberry Smoothie",
+      "imageURL": "img/foodPics/Smoothie02.jpg",
+      "price": "$2.99",
+      "distance": "0.1 mi",
+      "seller": "Luke",
+      "sellerRating": "2.9",
+      "pickupTime": "18:20",
+      "learn" : "No",
+      "pickupLocation": "1632 Marshall Ln, apt 4123",
+      "description": "Fancie Smoothie",
+      "orderNumbers": "3"
+    },
+
+    {
+      "name": "Banana Smoothie",
+      "imageURL": "img/foodPics/Smoothie03.jpg",
+      "price": "0.99",
+      "distance": "0.1 mi",
+      "seller": "Luke",
+      "sellerRating": "2.9",
+      "pickupTime": "09:20",
+      "learn" : "No",
+      "pickupLocation": "1632 Marshall Ln, apt 4123",
+      "description": "Fancie Smoothie",
+      "orderNumbers": "3"
+    }
+  ]
+}

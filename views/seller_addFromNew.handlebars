@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>seller next menu page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		<link href="/css/bootstrap-theme.css" rel="stylesheet">
+		<link href="/css/addNew.css" rel="stylesheet">
+
+	<!-- Use internet source for icons-->
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div id="myHeader" class="header">
+			<table>
+ 				<td><div class="topIcon"><a href="seller_addMenu"><i class="material-icons" style="font-size:50px;">backspace</i></a></div></td>
+ 				<td><h2>Add an Item</h2></td>
+ 			</table>
+			</div>
+
+ 			<center><table>
+ 				<form id="addFromNew" role="form" method="get" action="/add">
+	    			<div class="form-group">
+	      		<label for="name">Name:</label>
+	     	 		<input type="text" class="form-control" id="name" placeholder="Name" name="name">
+	    			</div>
+	    			<div class="form-group">
+	      			<label for="description">Description:</label>
+	      			<input type="text" class="form-control" id="description" placeholder="Description" name="description">
+	    			</div>
+	    			<div class="form-group">
+	      		<label for="price">Price:</label>
+	     	 		<input type="text" class="form-control" id="price" placeholder="$5.0" name="price">
+	    			</div>
+	    			<div class="form-group">
+	      		<label for="pickupTime">Pickup Time:</label>
+	     	 		<input type="text" class="form-control" id="pickupTime" placeholder="06:30" name="pickupTime">
+	    			</div>
+						<div class="form-group">
+	      			<label for="learn">Allow Buyer to Come to Learn the Menu:</label>
+	     	 		<input type="text" class="form-control" id="name" placeholder="Yes/No" name="learn">
+	    			</div>
+	    			<input type="submit" id="submitBtn" class="btn btn-default" value="Add Item"></input>
+				</form>
+ 			</table></center>
+
+		</div>
+		<script src="/js/jquery-1.11.0.js"></script>
+ 		<script src="/js/bootstrap.js"></script>
+ 		<script src="/js/userHome.js"></script>
+	</body>
+</html>
